@@ -42,8 +42,12 @@ p {
   height: 520px;
   background: #f02c60;
 }
-.header-class {
-  color: #999 !important;
+@media only screen and (min-width: 1200px) {
+  .header {
+    height: 187px;
+    overflow: hidden;
+    background: #fff;
+  }
 }
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
