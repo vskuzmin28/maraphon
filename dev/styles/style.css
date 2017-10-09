@@ -1,4 +1,22 @@
 @import '../styles/fonts.css';
+.btn {
+  display: inline-block;
+  padding: 0 56px !important;
+  height: 76px;
+  border-radius: 6px;
+}
+.btn-blue {
+  background: #0fb9bd;
+  font: 30px 'CANDARA';
+  color: #f02c60;
+  text-transform: uppercase;
+  line-height: 76px;
+  font-weight: bold;
+}
+.btn-blue:hover {
+  background: #f02c60;
+  color: #fff;
+}
 a,
 a:hover,
 li,
@@ -38,15 +56,143 @@ p {
   width: 13px;
   height: 13px;
 }
-.footer {
-  height: 520px;
-  background: #f02c60;
+@media only screen and (min-width: 1200px) {
+  .footer {
+    height: 520px;
+    overflow: hidden;
+    background: #f02c60;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .header {
     height: 187px;
     overflow: hidden;
     background: #fff;
+  }
+  .header__logo {
+    display: block;
+    float: left;
+    margin: 27px 0 0 33px;
+  }
+  .header__title-site {
+    margin: 0;
+    font: 82px 'CANDARA';
+    color: #f02c91;
+    line-height: 197px;
+    text-transform: uppercase;
+  }
+  .header__title-site img {
+    margin: 99px 36px 0 26px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    float: left;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-screen {
+    position: relative;
+    height: 824px;
+    background: url('../img/main-screen.png') no-repeat center;
+    background-size: cover;
+  }
+  .main-screen .container {
+    position: relative;
+    height: 824px;
+  }
+  .main-screen h2 {
+    margin-top: 104px;
+    margin-bottom: 28px;
+    display: block;
+    font: 64px 'CANDARA';
+    font-weight: 600;
+    height: 54px;
+    color: #fff;
+    line-height: 54px;
+    text-transform: uppercase;
+  }
+  .main-screen img {
+    margin: 0 12px 0 32px;
+    display: block;
+    float: left;
+  }
+  .main-screen h3 {
+    margin: 0 0 10px 70px;
+    display: block;
+    width: 76%;
+    font: 38px 'CANDARA';
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .main-screen p {
+    margin: 0 0 190px 70px;
+    font: 23px 'CANDARA';
+    color: #f02c60 !important;
+  }
+  .main-screen .btn {
+    margin: 0 0 0 72px;
+  }
+  .main-screen__counter {
+    z-index: 50;
+    position: absolute;
+    right: -60px;
+    bottom: -72px;
+    width: 710px;
+    height: 501px;
+    background: url('../img/main-screen-counter.png') no-repeat;
+    text-align: center;
+  }
+  .main-screen__counter p {
+    margin: 0;
+    padding: 0;
+    line-height: auto;
+    color: #fff !important;
+    text-transform: uppercase;
+  }
+  .main-screen__counter__description {
+    margin-top: 90px !important;
+    font: 32px 'CANDARA' !important;
+  }
+  .main-screen__counter__date {
+    font: 72px 'CANDARA' !important;
+    text-transform: none !important;
+  }
+  .main-screen__counter__date span {
+    font-weight: bold;
+  }
+  .main-screen__counter__left {
+    font: 39px 'CANDARA' !important;
+    font-weight: bold !important;
+  }
+  .main-screen__counter__quantity {
+    font: 125px 'CANDARA' !important;
+    font-weight: bold !important;
+    text-transform: none !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-slider {
+    height: 648px;
+    background: #f3f3f3;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .rewarding {
+    position: relative;
+    height: 842px;
+    background: url('../img/rewarding-bg.png') repeat-x center;
+  }
+  .rewarding .container {
+    position: relative !important;
+    height: 842px;
+  }
+  .rewarding__coach {
+    position: absolute;
+    display: block;
+    width: 1045px;
+    height: 816px;
+    left: -214px;
+    bottom: 0;
   }
 }
 /*
