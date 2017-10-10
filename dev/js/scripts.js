@@ -30,8 +30,16 @@ $('.send-form').submit(function() {
 
 $(function () {
 
-  $('#reviews-banner').responsiveSlides({
+  $('#team-banner').responsiveSlides({
     auto: true,
+    pager: false,
+    nav: true,
+    speed: 500,
+    namespace: "team-banners"
+  });
+
+  $('#reviews-banner').responsiveSlides({
+    auto: false,
     pager: false,
     nav: true,
     speed: 500,

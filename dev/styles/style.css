@@ -803,6 +803,32 @@ p {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .header {
+    height: 187px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .header__logo {
+    display: block;
+    float: left;
+    margin: 27px 0 0 33px;
+  }
+  .header__title-site {
+    margin: 0;
+    font: 82px 'CANDARA';
+    color: #f02c91;
+    line-height: 197px;
+    text-transform: uppercase;
+  }
+  .header__title-site img {
+    margin: 99px 36px 0 26px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    float: left;
+  }
+}
+@media only screen and (min-width: 1200px) {
   .rewarding {
     position: relative;
     height: 842px;
@@ -923,55 +949,205 @@ p {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .header {
-    height: 187px;
+  .team {
+    height: auto;
     overflow: hidden;
-    background: #fff;
+    padding: 40px 0 76px 0;
+    background: url('../img/team-bg.png') no-repeat center;
+    background-size: cover;
   }
-  .header__logo {
-    display: block;
-    float: left;
-    margin: 27px 0 0 33px;
+  .team__title {
+    height: 164px;
   }
-  .header__title-site {
-    margin: 0;
-    font: 82px 'CANDARA';
-    color: #f02c91;
-    line-height: 197px;
-    text-transform: uppercase;
+  .team__title img {
+    margin-top: -80px;
+    margin-left: 20px;
+    width: 76px;
+    height: 81px;
   }
-  .header__title-site img {
-    margin: 99px 36px 0 26px;
-    display: block;
-    width: 8px;
-    height: 8px;
-    float: left;
+  .team__title h3 {
+    font: 72px 'CANDARA';
+    color: #252526;
+    font-weight: bold;
+    text-align: center;
   }
-}
-@media only screen and (min-width: 1200px) {
-  .header {
-    height: 187px;
+  .team__title p {
+    font: 28px 'MyriadProRegular' !important;
+    text-align: center !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+  }
+  .team__title__hr {
+    margin: 0 auto 48px auto;
+    width: 47px;
+    height: 4px;
+    background: #f02c60;
+  }
+  .team__slider {
+    position: relative;
+    margin: 43px 0;
+    margin-bottom: 90px;
+    height: auto;
     overflow: hidden;
-    background: #fff;
+    -webkit-padding-start: 0px !important;
   }
-  .header__logo {
+  .team__slider li {
+    list-style: none;
+  }
+  .prev {
+    top: 163px;
+    left: -66px;
+    margin-right: -2%;
+    position: absolute;
+    display: block;
+    width: 27px !important;
+    height: 43px !important;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url('../img/small-arrow.png') no-repeat;
+    z-index: 99;
+    transform: rotate(180deg);
+  }
+  .prev:hover {
+    background: url('../img/small-arrow-pink.png') no-repeat;
+  }
+  .next {
+    top: 163px;
+    right: -66px;
+    margin-left: -2%;
+    position: absolute;
+    display: block;
+    width: 27px !important;
+    height: 43px !important;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url('../img/small-arrow.png') no-repeat;
+    z-index: 99;
+  }
+  .next:hover {
+    background: url('../img/small-arrow-pink.png') no-repeat;
+  }
+  .team__slider__item {
+    margin: 0 auto;
+    width: 264px;
+    height: 398px;
+    position: relative;
+  }
+  .team__slider__item__mask {
+    position: absolute;
+    bottom: 0;
+    left: -7px;
+    width: 271px;
+    height: 209px;
+    background: url('../img/team-mask.png') no-repeat;
+  }
+  .team__slider__item__description-body {
+    height: 68px;
+  }
+  .team__slider__item__description-body__date {
+    margin-right: 30px;
     display: block;
     float: left;
-    margin: 27px 0 0 33px;
+    width: 62px;
+    height: 62px;
+    background: url('../img/icon-small-blue.png') no-repeat;
+    font: 33px 'CANDARA';
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
   }
-  .header__title-site {
-    margin: 0;
-    font: 82px 'CANDARA';
-    color: #f02c91;
-    line-height: 197px;
+  .team__slider__item__description-body__titles {
+    float: left;
+  }
+  .team__slider__item__description-body__titles h5 {
+    margin-top: 6px;
+    font: 25px 'CANDARA';
+    font-weight: bold;
+    color: #252526;
+  }
+  .team__slider__item__description-body__titles p {
+    margin-top: -12px !important;
+    font: 25px 'CANDARA';
+    font-weight: bold;
+    color: #33b2ad !important;
+  }
+  .team__slider__item {
+    height: auto;
+  }
+  .team__slider__item p {
+    margin: 24px 0;
+    padding: 0 25px;
+    font: 17px 'CANDARA' !important;
+    color: #252526 !important;
+    text-align: center;
+    line-height: 26px !important;
+  }
+  .team__slider__item a,
+  .team__slider__item a:hover {
+    margin-top: 20px;
+    display: block;
+    width: 138px;
+    height: 41px;
+    background: 0;
+    border: 3px solid #fa83a3;
+    font: 18px 'CANDARA';
+    font-weight: bold;
+    color: #f02c60;
+    text-align: center;
+    line-height: 34px;
+    text-decoration: none;
+  }
+  .team__slider__item a:hover,
+  .team__slider__item a:hover:hover {
+    background: #fa83a3;
+    color: #fff;
+  }
+  .team__slider__item__author {
+    height: 74px;
+    overflow: hidden;
+  }
+  .team__slider__item__author img {
+    margin-right: 22px;
+    display: block;
+    float: left;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+  }
+  .team__slider__item__author__content {
+    float: left;
+    width: 200px;
+  }
+  .team__slider__item__author__content h5 {
+    font: 25px 'CANDARA';
+    font-weight: bold;
+    color: #252526;
+  }
+  .team__slider__item__author__content p {
+    padding: 0 !important;
+    margin-top: -10px !important;
+    font: 17px 'CANDARA' !important;
+    color: #f02c60 !important;
+    text-align: left !important;
+  }
+  .team__read-all {
+    width: 335px;
+    height: 76px;
+    background: #f02c60;
+    border-radius: 6px;
+    margin: 0 auto;
+    display: block;
+    font: 37px 'CANDARA';
+    text-align: center;
+    line-height: 76px;
     text-transform: uppercase;
+    text-decoration: none !important;
+    color: #fff;
   }
-  .header__title-site img {
-    margin: 99px 36px 0 26px;
-    display: block;
-    width: 8px;
-    height: 8px;
-    float: left;
+  .team__read-all:hover {
+    background: #33b2ad;
+    color: #fff;
   }
 }
 /*
