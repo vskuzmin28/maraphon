@@ -174,6 +174,10 @@ p {
     width: 60px;
     height: 60px;
   }
+  .socials li a:hover img,
+  .socials li a:hover:hover img {
+    transform: rotate(360deg);
+  }
   .socials li a:hover p,
   .socials li a:hover:hover p {
     font-weight: bold !important;
@@ -327,12 +331,6 @@ p {
     font: 125px 'CANDARA' !important;
     font-weight: bold !important;
     text-transform: none !important;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .main-slider {
-    height: 648px;
-    background: #f3f3f3;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -528,6 +526,12 @@ p {
   .meeting__preview__content p {
     font: 25px 'CANDARA' !important;
     color: #f02c60 !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-slider {
+    height: 648px;
+    background: #f3f3f3;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -815,6 +819,31 @@ p {
     height: 816px;
     left: -214px;
     bottom: 0;
+  }
+  .rewarding__title {
+    margin-top: 92px;
+    height: auto;
+  }
+  .rewarding__title img {
+    margin-top: -80px;
+    margin-right: 20px;
+    width: 76px;
+    height: 81px;
+  }
+  .rewarding__title h3 {
+    font: 72px 'MyriadProBold';
+    color: #252526;
+    font-weight: bold;
+    text-align: center;
+  }
+  .rewarding__title h3 span {
+    text-transform: uppercase;
+  }
+  .rewarding__title p {
+    font: 37px 'CANDARA' !important;
+    text-align: center !important;
+    color: #252526 !important;
+    text-transform: uppercase !important;
   }
 }
 @media only screen and (min-width: 1200px) {
