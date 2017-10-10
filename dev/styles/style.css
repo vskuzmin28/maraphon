@@ -109,6 +109,94 @@ p {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .hr-white {
+    margin: 18px auto 0 auto;
+    display: block;
+    width: 34px;
+    height: 3px;
+    background: #fff;
+  }
+  .footer {
+    height: 520px;
+    background: #f02c60;
+    position: relative;
+  }
+  .footer-couach {
+    display: block;
+    position: absolute;
+    width: 534px;
+    height: 560px;
+    margin-top: -40px;
+    margin-left: -80px;
+  }
+  .socials {
+    margin-top: 90px;
+    height: 180px;
+    overflow: hidden;
+  }
+  .socials li {
+    margin: 0 !important;
+    list-style: none;
+    width: 68px;
+    height: 88px;
+    float: left;
+    margin-right: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .socials li:nth-child(8) {
+    margin-right: 0 !important;
+  }
+  .socials li:nth-child(9) {
+    margin: 0 auto !important;
+    float: none !important;
+  }
+  .socials li:nth-child(8) a img,
+  .socials li:nth-child(8) a:hover img {
+    margin-left: 10px !important;
+  }
+  .socials li a,
+  .socials li a:hover {
+    display: block;
+    width: 68px;
+    text-decoration: none;
+  }
+  .socials li a p,
+  .socials li a:hover p {
+    margin-top: 10px;
+    text-align: center;
+    font: 16px 'MyriadProRegular' !important;
+    color: #fff !important;
+  }
+  .socials li a img,
+  .socials li a:hover img {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 60px;
+    height: 60px;
+  }
+  .socials li a:hover p,
+  .socials li a:hover:hover p {
+    font-weight: bold !important;
+    text-decoration: none !important;
+  }
+  .footer-info {
+    height: auto;
+    text-align: center;
+    color: #fff;
+  }
+  .footer-info p {
+    font: 30px 'MyriadProRegular' !important;
+    color: #fff !important;
+  }
+  .footer-info p span {
+    font-family: 'MyriadProBold' !important;
+  }
+  .footer-info h4 {
+    font: 42px 'CANDARA';
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 1200px) {
   .header {
     height: 187px;
     overflow: hidden;
@@ -248,6 +336,201 @@ p {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .meeting {
+    height: auto;
+    overflow: hidden;
+    padding: 102px 0;
+  }
+  .meeting__title {
+    height: 134px;
+  }
+  .meeting__title img {
+    margin-top: -80px;
+    margin-left: 20px;
+    width: 76px;
+    height: 81px;
+  }
+  .meeting__title h3 {
+    font: 72px 'CANDARA';
+    color: #252526;
+    font-weight: bold;
+    text-align: center;
+  }
+  .meeting__title__hr {
+    margin: 0 auto;
+    width: 47px;
+    height: 4px;
+    background: #f02c60;
+  }
+  .meetings__slider {
+    position: relative;
+    margin: 43px 0;
+    height: auto;
+    overflow: hidden;
+    -webkit-padding-start: 0px !important;
+  }
+  .meetings__slider li {
+    list-style: none;
+  }
+  .product-slider__conteiner {
+    height: 258px;
+  }
+  .product-slider__conteiner li {
+    float: left !important;
+    width: 100% !important;
+    height: 258px !important;
+    margin: 0 !important;
+    border: 0 !important;
+    background: 0 !important;
+    padding: 0 !important;
+  }
+  .product-slider__conteiner li img {
+    margin: 0 !important;
+  }
+  .product-slider__conteiner li:hover {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+  .small-banners_tabs {
+    margin-top: 60px !important;
+    position: absolute !important;
+    bottom: 24px;
+    width: 50px !important;
+    height: 12px !important;
+    z-index: 99;
+    left: 50%;
+    margin-left: -35px !important;
+  }
+  .small-banners_tabs li {
+    width: 10px;
+    height: 10px;
+    border: 0;
+    border-radius: 50%;
+    background: 0;
+    border: 1px solid #fff;
+    float: left !important;
+    margin-right: 6px !important;
+  }
+  .small-banners_tabs li:hover {
+    background: #fff !important;
+  }
+  .small-banners_tabs li a,
+  .small-banners_tabs li a:hover {
+    display: block !important;
+    width: 10px !important;
+    height: 10px !important;
+    background: 0 !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    text-indent: -9999px !important;
+  }
+  .small-banners_tabs li:last-child {
+    margin-right: 0 !important;
+  }
+  .prev {
+    top: 163px;
+    left: -66px;
+    margin-right: -2%;
+    position: absolute;
+    display: block;
+    width: 27px !important;
+    height: 43px !important;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url('../img/small-arrow.png') no-repeat;
+    z-index: 99;
+    transform: rotate(180deg);
+  }
+  .prev:hover {
+    background: url('../img/small-arrow-pink.png') no-repeat;
+  }
+  .next {
+    top: 163px;
+    right: -66px;
+    margin-left: -2%;
+    position: absolute;
+    display: block;
+    width: 27px !important;
+    height: 43px !important;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url('../img/small-arrow.png') no-repeat;
+    z-index: 99;
+  }
+  .next:hover {
+    background: url('../img/small-arrow-pink.png') no-repeat;
+  }
+  .meetings__slider__item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 28px;
+  }
+  .meetings__slider__item__description-body {
+    height: 68px;
+  }
+  .meetings__slider__item__description-body__date {
+    margin-right: 30px;
+    display: block;
+    float: left;
+    width: 62px;
+    height: 62px;
+    background: url('../img/icon-small-blue.png') no-repeat;
+    font: 33px 'CANDARA';
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+  }
+  .meetings__slider__item__description-body__titles {
+    float: left;
+  }
+  .meetings__slider__item__description-body__titles h5 {
+    margin-top: 6px;
+    font: 25px 'CANDARA';
+    font-weight: bold;
+    color: #252526;
+  }
+  .meetings__slider__item__description-body__titles p {
+    margin-top: -12px !important;
+    font: 25px 'CANDARA';
+    font-weight: bold;
+    color: #33b2ad !important;
+  }
+  .meeting__preview {
+    height: auto;
+    overflow: hidden;
+  }
+  .meeting__preview__date {
+    margin-top: 42px;
+    margin-right: 30px;
+    float: left;
+    width: 62px;
+    height: 62px;
+    background: url('../img/icon-small-pink.png') no-repeat;
+    font: 33px 'CANDARA';
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+  }
+  .meeting__preview__content {
+    float: left;
+    width: 90%;
+  }
+  .meeting__preview__content h5 {
+    font: 30px 'CANDARA';
+    color: #252526;
+  }
+  .meeting__preview__content h5 span {
+    font-weight: bold !important;
+  }
+  .meeting__preview__content p {
+    font: 25px 'CANDARA' !important;
+    color: #f02c60 !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
   .header {
     height: 187px;
     overflow: hidden;
@@ -316,120 +599,6 @@ p {
     height: 816px;
     left: -214px;
     bottom: 0;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .hr-white {
-    margin: 18px auto 0 auto;
-    display: block;
-    width: 34px;
-    height: 3px;
-    background: #fff;
-  }
-  .footer {
-    height: 520px;
-    background: #f02c60;
-    position: relative;
-  }
-  .footer-couach {
-    display: block;
-    position: absolute;
-    width: 534px;
-    height: 560px;
-    margin-top: -40px;
-    margin-left: -80px;
-  }
-  .socials {
-    margin-top: 90px;
-    height: 180px;
-    overflow: hidden;
-  }
-  .socials li {
-    margin: 0 !important;
-    list-style: none;
-    width: 68px;
-    height: 88px;
-    float: left;
-    margin-right: 20px !important;
-    margin-bottom: 20px !important;
-  }
-  .socials li:nth-child(8) {
-    margin-right: 0 !important;
-  }
-  .socials li:nth-child(9) {
-    margin: 0 auto !important;
-    float: none !important;
-  }
-  .socials li:nth-child(8) a img,
-  .socials li:nth-child(8) a:hover img {
-    margin-left: 10px !important;
-  }
-  .socials li a,
-  .socials li a:hover {
-    display: block;
-    width: 68px;
-    text-decoration: none;
-  }
-  .socials li a p,
-  .socials li a:hover p {
-    margin-top: 10px;
-    text-align: center;
-    font: 16px 'MyriadProRegular' !important;
-    color: #fff !important;
-  }
-  .socials li a img,
-  .socials li a:hover img {
-    display: block !important;
-    margin: 0 auto !important;
-    width: 60px;
-    height: 60px;
-  }
-  .socials li a:hover p,
-  .socials li a:hover:hover p {
-    font-weight: bold !important;
-    text-decoration: none !important;
-  }
-  .footer-info {
-    height: auto;
-    text-align: center;
-    color: #fff;
-  }
-  .footer-info p {
-    font: 30px 'MyriadProRegular' !important;
-    color: #fff !important;
-  }
-  .footer-info p span {
-    font-family: 'MyriadProBold' !important;
-  }
-  .footer-info h4 {
-    font: 42px 'CANDARA';
-    font-weight: bold;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .header {
-    height: 187px;
-    overflow: hidden;
-    background: #fff;
-  }
-  .header__logo {
-    display: block;
-    float: left;
-    margin: 27px 0 0 33px;
-  }
-  .header__title-site {
-    margin: 0;
-    font: 82px 'CANDARA';
-    color: #f02c91;
-    line-height: 197px;
-    text-transform: uppercase;
-  }
-  .header__title-site img {
-    margin: 99px 36px 0 26px;
-    display: block;
-    width: 8px;
-    height: 8px;
-    float: left;
   }
 }
 @media only screen and (min-width: 1200px) {
