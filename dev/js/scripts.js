@@ -30,13 +30,12 @@ $('.send-form').submit(function() {
 
 $(function () {
 
-  $('#main-baner').responsiveSlides({
+  $('#reviews-banner').responsiveSlides({
     auto: true,
-    pager: true,
+    pager: false,
     nav: true,
     speed: 500,
-    maxwidth: 5000,
-    namespace: "centered-controls"
+    namespace: "reviews-banners"
   });
 
   $('#meetings-banner').responsiveSlides({
