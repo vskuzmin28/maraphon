@@ -58,100 +58,56 @@ p {
 }
 @media only screen and (min-width: 1200px) {
   .about-coach {
-    height: 852px;
-    background: #fff;
+    height: 854px;
+    background: url('../img/about-coach-bg.png') repeat-x center;
   }
-}
-@media only screen and (min-width: 1200px) {
-  .hr-white {
-    margin: 18px auto 0 auto;
-    display: block;
-    width: 34px;
-    height: 3px;
-    background: #fff;
+  .about-coach p {
+    font: 22px 'CANDARA' !important;
+    line-height: 30px !important;
+    color: #3c3c3c !important;
+    text-align: center !important;
   }
-  .footer {
-    height: 520px;
-    background: #f02c60;
-    position: relative;
+  .about-coach__content {
+    height: auto;
+    margin-top: 125px;
   }
-  .footer-couach {
+  .about-coach__coach {
     display: block;
     position: absolute;
-    width: 534px;
-    height: 560px;
-    margin-top: -40px;
-    margin-left: -80px;
+    left: -160px;
+    width: 703px;
+    height: 854px;
   }
-  .socials {
-    margin-top: 90px;
-    height: 180px;
-    overflow: hidden;
+  .about-coach__title {
+    margin: 40px 0;
+    height: 164px;
   }
-  .socials li {
-    margin: 0 !important;
-    list-style: none;
-    width: 68px;
-    height: 88px;
-    float: left;
-    margin-right: 20px !important;
-    margin-bottom: 20px !important;
+  .about-coach__title img {
+    margin-top: -80px;
+    margin-left: 20px;
+    width: 76px;
+    height: 81px;
   }
-  .socials li:nth-child(8) {
-    margin-right: 0 !important;
-  }
-  .socials li:nth-child(9) {
-    margin: 0 auto !important;
-    float: none !important;
-  }
-  .socials li:nth-child(8) a img,
-  .socials li:nth-child(8) a:hover img {
-    margin-left: 10px !important;
-  }
-  .socials li a,
-  .socials li a:hover {
-    display: block;
-    width: 68px;
-    text-decoration: none;
-  }
-  .socials li a p,
-  .socials li a:hover p {
-    margin-top: 10px;
-    text-align: center;
-    font: 16px 'MyriadProRegular' !important;
-    color: #fff !important;
-  }
-  .socials li a img,
-  .socials li a:hover img {
-    display: block !important;
-    margin: 0 auto !important;
-    width: 60px;
-    height: 60px;
-  }
-  .socials li a:hover img,
-  .socials li a:hover:hover img {
-    transform: rotate(360deg);
-  }
-  .socials li a:hover p,
-  .socials li a:hover:hover p {
-    font-weight: bold !important;
-    text-decoration: none !important;
-  }
-  .footer-info {
-    height: auto;
-    text-align: center;
-    color: #fff;
-  }
-  .footer-info p {
-    font: 30px 'MyriadProRegular' !important;
-    color: #fff !important;
-  }
-  .footer-info p span {
-    font-family: 'MyriadProBold' !important;
-  }
-  .footer-info h4 {
-    font: 42px 'CANDARA';
+  .about-coach__title h3 {
+    font: 58px 'CANDARA';
+    color: #252526;
     font-weight: bold;
+    text-align: center;
+  }
+  .about-coach__title h3 span {
+    color: #ef3163;
+  }
+  .about-coach__title p {
+    font: 37px 'MyriadProRegular' !important;
+    text-align: center !important;
+    color: #717171 !important;
+    text-transform: uppercase !important;
+  }
+  .about-coach__title__hr {
+    margin: 0 auto 48px auto;
+    width: 47px;
+    height: 4px;
+    background: #f02c60;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -247,29 +203,95 @@ p {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .header {
-    height: 187px;
-    overflow: hidden;
+  .hr-white {
+    margin: 18px auto 0 auto;
+    display: block;
+    width: 34px;
+    height: 3px;
     background: #fff;
   }
-  .header__logo {
-    display: block;
-    float: left;
-    margin: 27px 0 0 33px;
+  .footer {
+    height: 520px;
+    background: #f02c60;
+    position: relative;
   }
-  .header__title-site {
-    margin: 0;
-    font: 82px 'CANDARA';
-    color: #f02c91;
-    line-height: 197px;
-    text-transform: uppercase;
-  }
-  .header__title-site img {
-    margin: 99px 36px 0 26px;
+  .footer-couach {
     display: block;
-    width: 8px;
-    height: 8px;
+    position: absolute;
+    width: 534px;
+    height: 560px;
+    margin-top: -40px;
+    margin-left: -80px;
+  }
+  .socials {
+    margin-top: 90px;
+    height: 180px;
+    overflow: hidden;
+  }
+  .socials li {
+    margin: 0 !important;
+    list-style: none;
+    width: 68px;
+    height: 88px;
     float: left;
+    margin-right: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .socials li:nth-child(8) {
+    margin-right: 0 !important;
+  }
+  .socials li:nth-child(9) {
+    margin: 0 auto !important;
+    float: none !important;
+  }
+  .socials li:nth-child(8) a img,
+  .socials li:nth-child(8) a:hover img {
+    margin-left: 10px !important;
+  }
+  .socials li a,
+  .socials li a:hover {
+    display: block;
+    width: 68px;
+    text-decoration: none;
+  }
+  .socials li a p,
+  .socials li a:hover p {
+    margin-top: 10px;
+    text-align: center;
+    font: 16px 'MyriadProRegular' !important;
+    color: #fff !important;
+  }
+  .socials li a img,
+  .socials li a:hover img {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 60px;
+    height: 60px;
+  }
+  .socials li a:hover img,
+  .socials li a:hover:hover img {
+    transform: rotate(360deg);
+  }
+  .socials li a:hover p,
+  .socials li a:hover:hover p {
+    font-weight: bold !important;
+    text-decoration: none !important;
+  }
+  .footer-info {
+    height: auto;
+    text-align: center;
+    color: #fff;
+  }
+  .footer-info p {
+    font: 30px 'MyriadProRegular' !important;
+    color: #fff !important;
+  }
+  .footer-info p span {
+    font-family: 'MyriadProBold' !important;
+  }
+  .footer-info h4 {
+    font: 42px 'CANDARA';
+    font-weight: bold;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -296,6 +318,27 @@ p {
     width: 8px;
     height: 8px;
     float: left;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .im-new {
+    height: auto;
+    background: #f3f3f3;
+    padding: 70px 0;
+  }
+  .im-new__slider {
+    margin: 40px 0;
+    height: 416px;
+  }
+  .im-new__all-video {
+    display: block;
+    font: 30px 'CANDARA';
+    color: #3c3c3c;
+    text-align: center;
+    text-decoration: none;
+  }
+  .im-new__all-video:hover {
+    text-decoration: underline;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -381,8 +424,15 @@ p {
 }
 @media only screen and (min-width: 1200px) {
   .main-slider {
-    height: 648px;
+    padding: 124px;
+    height: auto;
     background: #f3f3f3;
+    overflow: hidden;
+  }
+  .main__slider {
+    width: 100%;
+    height: 416px;
+    background: #f00;
   }
 }
 @media only screen and (min-width: 1200px) {
