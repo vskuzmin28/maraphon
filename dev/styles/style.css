@@ -57,121 +57,9 @@ p {
   height: 60px;
 }
 @media only screen and (min-width: 1200px) {
-  .counseling {
-    padding: 60px 0;
-    position: relative;
-    height: auto;
-    background: url('../img/rewarding-bg.png') repeat-x center;
-    background-size: cover;
-  }
-  .counseling .container {
-    position: relative !important;
-    height: auto;
-  }
-  .counseling__coach {
-    position: absolute;
-    display: block;
-    width: 600px;
-    height: 772px;
-    right: -120px;
-    top: 0;
-  }
-  .counseling__content h5 {
-    margin-top: 10px;
-    font: 27px 'CANDARA' !important;
-    font-weight: bold !important;
-    text-align: center !important;
-    color: #484848 !important;
-  }
-  .counseling__content p {
-    font: 22px 'CANDARA' !important;
-    font-weight: normal !important;
-    text-align: center !important;
-    color: #484848 !important;
-  }
-  .counseling__content .btn-pink {
-    width: 450px !important;
-    margin: 0 0 40px 20% !important;
-  }
-  .counseling__title {
-    margin-top: 92px;
-    height: auto;
-  }
-  .counseling__title img {
-    margin-top: -80px;
-    margin-right: 20px;
-    width: 76px;
-    height: 81px;
-  }
-  .counseling__title h3 {
-    font: 72px 'MyriadProBold';
-    color: #252526;
-    font-weight: bold;
-    text-align: center;
-  }
-  .counseling__title h3 span {
-    text-transform: uppercase;
-  }
-  .counseling__title p {
-    font: 37px 'CANDARA' !important;
-    text-align: center !important;
-    color: #252526 !important;
-    text-transform: uppercase !important;
-  }
-  .counseling__hr {
-    margin: 0 auto;
-    width: 38px;
-    height: 4px;
-    background: #f02c60;
-  }
-  .counseling__price {
-    margin: 40px 0;
-    font: 60px 'CANDARA';
-    font-weight: bold;
-    text-align: center;
-    color: #f02c60;
-  }
-  .counseling__price span {
-    font-weight: normal !important;
-  }
-  .btn {
-    height: 76px;
-  }
-  .btn-pink {
-    background: #f02c60;
-    font: 37px 'CANDARA';
-    color: #fff;
-    text-transform: uppercase;
-    line-height: 76px;
-  }
-  .btn-pink:hover {
-    background: #0fb9bd;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .header {
-    height: 187px;
-    overflow: hidden;
+  .about-coach {
+    height: 852px;
     background: #fff;
-  }
-  .header__logo {
-    display: block;
-    float: left;
-    margin: 27px 0 0 33px;
-  }
-  .header__title-site {
-    margin: 0;
-    font: 82px 'CANDARA';
-    color: #f02c91;
-    line-height: 197px;
-    text-transform: uppercase;
-  }
-  .header__title-site img {
-    margin: 99px 36px 0 26px;
-    display: block;
-    width: 8px;
-    height: 8px;
-    float: left;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -264,6 +152,98 @@ p {
   .footer-info h4 {
     font: 42px 'CANDARA';
     font-weight: bold;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .counseling {
+    padding: 60px 0;
+    position: relative;
+    height: auto;
+    background: url('../img/rewarding-bg.png') repeat-x center;
+    background-size: cover;
+  }
+  .counseling .container {
+    position: relative !important;
+    height: auto;
+  }
+  .counseling__coach {
+    position: absolute;
+    display: block;
+    width: 600px;
+    height: 772px;
+    right: -120px;
+    top: 0;
+  }
+  .counseling__content h5 {
+    margin-top: 10px;
+    font: 27px 'CANDARA' !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    color: #484848 !important;
+  }
+  .counseling__content p {
+    font: 22px 'CANDARA' !important;
+    font-weight: normal !important;
+    text-align: center !important;
+    color: #484848 !important;
+  }
+  .counseling__content .btn-pink {
+    width: 450px !important;
+    margin: 0 0 40px 20% !important;
+  }
+  .counseling__title {
+    margin-top: 92px;
+    height: auto;
+  }
+  .counseling__title img {
+    margin-top: -80px;
+    margin-right: 20px;
+    width: 76px;
+    height: 81px;
+  }
+  .counseling__title h3 {
+    font: 72px 'MyriadProBold';
+    color: #252526;
+    font-weight: bold;
+    text-align: center;
+  }
+  .counseling__title h3 span {
+    text-transform: uppercase;
+  }
+  .counseling__title p {
+    font: 37px 'CANDARA' !important;
+    text-align: center !important;
+    color: #252526 !important;
+    text-transform: uppercase !important;
+  }
+  .counseling__hr {
+    margin: 0 auto;
+    width: 38px;
+    height: 4px;
+    background: #f02c60;
+  }
+  .counseling__price {
+    margin: 40px 0;
+    font: 60px 'CANDARA';
+    font-weight: bold;
+    text-align: center;
+    color: #f02c60;
+  }
+  .counseling__price span {
+    font-weight: normal !important;
+  }
+  .btn {
+    height: 76px;
+  }
+  .btn-pink {
+    background: #f02c60;
+    font: 37px 'CANDARA';
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 76px;
+  }
+  .btn-pink:hover {
+    background: #0fb9bd;
   }
 }
 @media only screen and (min-width: 1200px) {
