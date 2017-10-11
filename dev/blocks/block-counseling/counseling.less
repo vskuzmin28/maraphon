@@ -1,30 +1,121 @@
 @media only screen and (min-width : 1200px) {
 
-	.header {
-		height: 187px;
-		overflow: hidden;
-		background: @white;
+	// counseling
+
+	.counseling {
+		padding: 60px 0;
+		position: relative;
+		height: auto;
+		background: url('../img/rewarding-bg.png') repeat-x center;
+		background-size: cover;
+
+		.container {
+			position: relative !important;
+			height: auto;
+		}
+
 	}
 
-	.header__logo {
+	.counseling__coach {
+		position: absolute;
 		display: block;
-		float: left;
-		margin: 27px 0 0 33px;
+		width: 600px;
+		height: 772px;
+		right: -120px;
+		top: 0;
 	}
 
-	.header__title-site {
-		margin: 0;
-		font: 82px 'CANDARA';
-		color: @pink-light;
-		line-height: 197px;
-		text-transform: uppercase;
+	.counseling__content {
+
+		h5 {
+			margin-top: 10px;
+			font: 27px 'CANDARA' !important;
+			font-weight: bold !important;
+			text-align: center !important;
+			color: #484848 !important;
+		}
+
+		p {
+			font: 22px 'CANDARA' !important;
+			font-weight: normal !important;
+			text-align: center !important;
+			color: #484848 !important;
+		}
+
+	}
+
+	.counseling__content {
+		.btn-pink {
+			width: 450px !important;
+			margin: 0 0 40px 20% !important;
+		}
+	}
+
+	.counseling__title {
+		margin-top: 92px;
+		height: auto;
 
 		img {
-			margin: 99px 36px 0 26px;
-			display: block;
-			width: 8px;
-			height: 8px;
-			float: left;
+			margin-top: -80px;
+			margin-right: 20px;
+			width: 76px;
+			height: 81px;
+		}
+
+		h3 {
+			font: 72px 'MyriadProBold';
+			color: @grey-light;
+			font-weight: bold;
+			text-align: center;
+
+			span {
+				text-transform: uppercase;
+			}
+
+		}
+
+		p {
+			font: 37px 'CANDARA' !important;
+			text-align: center !important;
+			color: @grey-light !important;
+			text-transform: uppercase !important;
+		}
+
+	}
+
+	.counseling__hr {
+		margin: 0 auto;
+		width: 38px;
+		height: 4px;
+		background: @pink;
+	}
+
+	.counseling__price {
+		margin: 40px 0;
+		font: 60px 'CANDARA';
+		font-weight: bold;
+		text-align: center;
+		color: @pink;
+
+		span {
+			font-weight: normal !important;
+		}
+
+	}
+
+	.btn {
+		height: 76px;
+	}
+
+	.btn-pink {
+		background: @pink;
+		font: 37px 'CANDARA';
+		color: @white;
+		text-transform: uppercase;
+		line-height: 76px;
+
+		&:hover {
+			background: @blue;
 		}
 
 	}

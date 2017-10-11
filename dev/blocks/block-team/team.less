@@ -4,7 +4,6 @@
 
 	.team {
 		height: auto;
-		overflow: hidden;
 		padding: 40px 0 76px 0;
 		background: url('../img/team-bg.png') no-repeat center;
 		background-size: cover;
@@ -48,7 +47,7 @@
 		margin: 43px 0;
 		margin-bottom: 90px;
 		height: auto;
-		overflow: hidden;
+
 		-webkit-padding-start: 0px !important;
 
 		li {
@@ -100,8 +99,10 @@
 	.team__slider__item {
 		margin: 0 auto;
 		width: 264px;
-		height: 398px;
+		height: 598px;
 		position: relative;
+		background: 0;
+
 	}
 
 	.team__slider__item__mask {
@@ -111,6 +112,35 @@
 		width: 271px;
 		height: 209px;
 		background: url('../img/team-mask.png') no-repeat;
+		text-align: center;
+
+		h4 {
+			margin-top: 60px;
+			font: 26px 'CANDARA';
+			font-weight: bold;
+			color: @black !important;
+		}
+
+		h5 {
+			margin-top: -10px;
+			font: 23px 'CANDARA';
+			font-weight: bold;
+			color: #535353;
+		}
+
+		p {
+			margin-top: 4px !important;
+			font: 22px 'CANDARA' !important;
+			color: @pink !important;
+		}
+
+	}
+
+	.team__slider__item__mask__hr {
+		margin: 0 auto;
+		width: 25px;
+		height: 2px;
+		background: @pink;
 	}
 
 	.team__slider__item__description-body {
@@ -240,6 +270,43 @@
 			color: @white;
 		}
 
+	}
+
+	.team__slider__item__space {
+		height: 40px;
+	}
+
+	.team__detail {
+		margin-top: 40px;
+		height: auto;
+		text-align: center;
+
+
+		p {
+			margin-bottom: 10px !important;
+			font: 25px 'CANDARA' !important;
+			font-weight: bold !important;
+			text-align: center;
+			color: @black !important;
+		}
+
+		a, a:hover {
+			font: 33px 'CANDARA';
+			text-decoration: underline;
+			text-transform: uppercase;
+			color: @white;
+		}
+
+	}
+
+	.team__cubes {
+		top: -30px;
+		right: -60px;
+		position: absolute;
+		width: 250px;
+		height: 152px;
+		background: url('../img/team-cubes.png') no-repeat;
+		z-index: 10;
 	}
 
 }

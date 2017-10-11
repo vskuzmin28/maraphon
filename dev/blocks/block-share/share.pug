@@ -1,4 +1,11 @@
-header.header
+.share
+
+	// title
+
+	.share__title
+		h3
+			| Как принять участие ?
+		.share__title__hr
 
 	// container
 
@@ -6,10 +13,84 @@ header.header
 
 		.row
 
-			.col-md-12
-				
-				img.header__logo(src="../img/logo.png" alt="@@")
+			// column
 
-				h2.header__title-site
-					img(src="../img/icon-title.png" alt="@@")
-					| Fit Style Maрафон
+			.col-md-4
+				
+				// item
+
+				.share__item
+
+					.share__item__mask
+
+						p
+							| Отправь <span>заявку</span>
+
+					.share__item__content
+
+						p
+							| Заявка на участие. <br/> Марафон стартует
+
+						.share__item__content__date-day
+							| 25
+						.share__item__content__date-mounth
+							| октября
+
+					a.btn-yellow(href="#" title="")
+						| Заявка
+
+				// / item
+
+			// column
+
+			.col-md-4
+
+				// item
+
+				.share__item
+
+					.share__item__mask
+
+						p
+							| Заполни <span>анкету</span>
+
+					.share__item__content
+
+						p
+							| Личная анкета участника
+
+						form(action="/" method="post")
+							input(type="text" name="tel" placeholder="Телефон")
+							input(type="text" name="tel" placeholder="Почта")
+							input(type="text" name="tel" placeholder="Имя,фамилия")
+							input.btn-yellow(type="submit" value="Отправить")
+
+				// / item
+
+			// column
+
+			.col-md-4
+
+				// item
+
+				.share__item
+
+					.share__item__mask
+
+						p
+							| Оплати <span>участие</span>
+
+					.share__item__content
+
+						p
+							| Стоимость участия при оплате <br/> до 15 октября
+
+						.share__item__content__price
+							| 1000p.
+						
+						p
+							| 15-20 октября стоимость увеличивается на 500 рублей
+
+					a.btn-buy(href="#" title="")
+
+				// / item
