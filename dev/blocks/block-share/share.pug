@@ -36,7 +36,7 @@
 						.share__item__content__date-mounth
 							| октября
 
-					a.btn-yellow(href="#" title="")
+					a.btn-yellow.call(href="#" title="")
 						| Заявка
 
 				// / item
@@ -59,11 +59,12 @@
 						p
 							| Личная анкета участника
 
-						form(action="/" method="post")
-							input(type="text" name="tel" placeholder="Телефон")
-							input(type="text" name="tel" placeholder="Почта")
-							input(type="text" name="tel" placeholder="Имя,фамилия")
-							input.btn-yellow(type="submit" value="Отправить")
+						form.send-form(action="../mail.php" method="post")
+							input(type="text" name="phone" pattern=".{11,}" placeholder="Телефон" required)
+							input(type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Почта" required)
+							input(type="text" name="name" placeholder="Имя,фамилия" required)
+							input(type="hidden" id="action" name="action" value="submitform")
+							input.btn-yellow(type="submit" name="" value="Отправить")
 
 				// / item
 

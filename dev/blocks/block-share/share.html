@@ -19,7 +19,7 @@
             <p>Заявка на участие. <br/> Марафон стартует</p>
             <div class="share__item__content__date-day">25</div>
             <div class="share__item__content__date-mounth">октября</div>
-          </div><a class="btn-yellow" href="#" title="">Заявка</a>
+          </div><a class="btn-yellow call" href="#" title="">Заявка</a>
         </div>
         <!-- / item-->
       </div>
@@ -32,11 +32,12 @@
           </div>
           <div class="share__item__content">
             <p>Личная анкета участника</p>
-            <form action="/" method="post">
-              <input type="text" name="tel" placeholder="Телефон"/>
-              <input type="text" name="tel" placeholder="Почта"/>
-              <input type="text" name="tel" placeholder="Имя,фамилия"/>
-              <input class="btn-yellow" type="submit" value="Отправить"/>
+            <form class="send-form" action="../mail.php" method="post">
+              <input type="text" name="phone" pattern=".{11,}" placeholder="Телефон" required="required"/>
+              <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$" placeholder="Почта" required="required"/>
+              <input type="text" name="name" placeholder="Имя,фамилия" required="required"/>
+              <input type="hidden" id="action" name="action" value="submitform"/>
+              <input class="btn-yellow" type="submit" name="" value="Отправить"/>
             </form>
           </div>
         </div>

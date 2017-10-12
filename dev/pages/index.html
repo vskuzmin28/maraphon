@@ -38,7 +38,7 @@
             <!-- counter-->
             <h2><img src="../img/icon-arrow.png" alt="">Хочу быть стройной и молодой</h2>
             <h3>система​ похудения, стильное похудение, он-лайн​ марафон</h3>
-            <p>Проходит​ каждый ​месяц, продолжительность​ 3 недели.</p><a class="btn btn-blue" href="#" title="">Задай вопрос</a>
+            <p>Проходит​ каждый ​месяц, продолжительность​ 3 недели.</p><a class="btn btn-blue call" href="#" title="">Задай вопрос</a>
           </div>
         </div>
         <div class="main-screen__counter">
@@ -265,7 +265,7 @@
                 <p>Заявка на участие. <br/> Марафон стартует</p>
                 <div class="share__item__content__date-day">25</div>
                 <div class="share__item__content__date-mounth">октября</div>
-              </div><a class="btn-yellow" href="#" title="">Заявка</a>
+              </div><a class="btn-yellow call" href="#" title="">Заявка</a>
             </div>
             <!-- / item-->
           </div>
@@ -278,11 +278,12 @@
               </div>
               <div class="share__item__content">
                 <p>Личная анкета участника</p>
-                <form action="/" method="post">
-                  <input type="text" name="tel" placeholder="Телефон">
-                  <input type="text" name="tel" placeholder="Почта">
-                  <input type="text" name="tel" placeholder="Имя,фамилия">
-                  <input class="btn-yellow" type="submit" value="Отправить">
+                <form class="send-form" action="../mail.php" method="post">
+                  <input type="text" name="phone" pattern=".{11,}" placeholder="Телефон" required>
+                  <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$" placeholder="Почта" required>
+                  <input type="text" name="name" placeholder="Имя,фамилия" required>
+                  <input type="hidden" id="action" name="action" value="submitform">
+                  <input class="btn-yellow" type="submit" name="" value="Отправить">
                 </form>
               </div>
             </div>
@@ -321,7 +322,7 @@
               <div class="counseling__hr"></div>
               <h5>Тестирование <br/> Построение​ базового рациона​ <br/> и ​базовой ​тренировки​</h5>
               <p>специально​ для​ тех, у ​кого напряженный ​рабочий​ график</p>
-              <div class="counseling__price">3000 рублей <span>( 3 часа )</span></div><a class="btn btn-pink" href="#" title="">Присоединяйся!</a>
+              <div class="counseling__price">3000 рублей <span>( 3 часа )</span></div><a class="btn btn-pink call" href="#" title="">Присоединяйся!</a>
             </div>
           </div>
         </div>
@@ -541,7 +542,7 @@
           <div class="col-md-12">
             <div class="team__cubes"></div>
             <div class="team__detail">
-              <p>Все участницы марафона получают вип-скидки от наших специалистов!</p><a href="#" title="">Предложить свое участие, как специалиста</a>
+              <p>Все участницы марафона получают вип-скидки от наших специалистов!</p><a class="call" href="#" title="">Предложить свое участие, как специалиста</a>
             </div>
           </div>
         </div>
@@ -983,13 +984,39 @@
       </div>
     </footer>
     <!-- / footer-->
+    <!-- popups-->
+    <!-- form-->
+    <div class="popup-call form__mail" id="rise"><a class="icon__close" href="#" title=""></a>
+      <!-- title block-->
+      <div class="form__mail__title-block">
+        <h5>	Оставьте заявку</h5>
+      </div>
+      <form class="send-form" action="../mail.php" method="post">
+        <input type="text" name="name" placeholder="Имя,фамилия" required>
+        <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$" placeholder="Почта" required>
+        <input type="text" name="phone" pattern=".{11,}" placeholder="Телефон" required>
+        <input type="hidden" id="action" name="action" value="submitform">
+        <input class="btn-yellow btn-submit" type="submit" name="" value="Отправить">
+      </form>
+    </div>
+    <!-- form-->
+    <div class="popup-policy popup"><a class="icon__close" href="#" title=""></a>
+      <h5>	Agreement on the processing of personal data</h5>
+      <p>	This agreement on the processing of personal data is developed in accordance with the legislation of the United Kingdom.</p>
+      <p>	All persons who fill out information composing personal data on this site, as well as placing other information by indicated actions confirm their consent to the processing of personal data and their transfer to the operator of personal data processing.</p>
+      <p>	Citizen, accepting this Agreement, express their interest and full consent that the processing of their personal data may include the following actions: collection, systematization, accumulation, storage, clarification (updating, modification), use, destruction.</p>
+    </div>
+    <div class="popup" id="okthanks"><a class="icon__close" href="#" title=""></a>
+      <div class="thanks">	Thank you</div>
+    </div>
+    <!-- / popups-->
     <!-- scripts-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed-->
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/responsiveslides.min.js"></script>
-    <!--script(src='../js/jquery.bpopup.min.js')-->
+    <script src="../js/jquery.bpopup.min.js"></script>
     <!--script(src='../js/smooth-scroll.js')-->
     <script src="../js/scripts.js"></script>
     <!-- / scripts-->

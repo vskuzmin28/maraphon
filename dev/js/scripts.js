@@ -1,14 +1,13 @@
-// logic menu
+// call popup
 
-$('.mobile-menu-icon').click(function(){
-  $('nav.navigation').toggle();
+$('.call').click(function(){
+  event.preventDefault();
+  $('.popup-call').bPopup({
+    closeClass:'icon__close',
+      amsl: 0,
+      positionStyle: 'fixed',
+    }); 
 });
-
-$('.tablet-menu-icon').click(function(){
-  $(this).toggleClass('tablet-menu-icon-active');
-  $('nav.navigation').toggle();
-});
-
 
 
 $('.send-form').submit(function() {
