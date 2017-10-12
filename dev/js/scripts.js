@@ -30,6 +30,22 @@ $('.send-form').submit(function() {
 
 $(function () {
 
+  $('#new-banner').responsiveSlides({
+    auto: true,
+    pager: false,
+    nav: true,
+    speed: 500,
+    namespace: "im-new-banners"
+  });
+
+  $('#main-banner').responsiveSlides({
+    auto: true,
+    pager: false,
+    nav: true,
+    speed: 500,
+    namespace: "main-banners"
+  });
+
   $('#team-banner').responsiveSlides({
     auto: true,
     pager: false,
