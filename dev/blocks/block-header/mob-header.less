@@ -1,27 +1,29 @@
-@media only screen and (min-width : @desktop) {
+@media only screen and (min-width : @mobile) and  (max-width : @desktop) {
 
 	.header {
-		height: 187px;
+		height: auto;
 		overflow: hidden;
 		background: @white;
 	}
 
 	.header__logo {
 		display: block;
-		float: left;
-		margin: 27px 0 0 33px;
+		float: none;
+		margin: 20px auto;
 	}
 
 	.header__title-site {
 		margin: 0;
-		font: 82px 'CANDARA';
+		margin-bottom: 20px;
+		font: 42px 'CANDARA';
 		color: @pink-light;
-		line-height: 197px;
+		text-align: center;
+		line-height: auto;
 		text-transform: uppercase;
 
 		img {
+			display: none;
 			margin: 99px 36px 0 26px;
-			display: block;
 			width: 8px;
 			height: 8px;
 			float: left;

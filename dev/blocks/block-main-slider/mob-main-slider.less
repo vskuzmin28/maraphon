@@ -1,66 +1,47 @@
-@media only screen and (min-width : @desktop) {
+@media only screen and (min-width : @mobile) and  (max-width : @desktop) {
 
-	.im-new {
+
+	// main slider
+
+	.main-slider {
+		padding: 124px 0;
 		height: auto;
+    overflow: hidden;
 		background: #f3f3f3;
-		padding: 70px 0;
-		overflow: hidden;
 	}
 
-	.im-new__slider {
-		margin: 40px 0;
+	.main__slider {
 		height: 418px;
+    -webkit-padding-start: 0px !important;
 	}
 
-	.im-new__all-video {
-		margin-top: 30px;
-		display: block;
-		font: 30px 'CANDARA';
-		color: #3c3c3c;
-		text-align: center;
-		text-decoration: none;
-
-		&:hover {
-			text-decoration: underline;
-		}
-
-	}
-
-	.im-new__slider {
-		margin: 0 auto;
-		width: 1065px;
+	.main__slider__content {
+    width: 100%;
 		height: 418px;
-		background: url('../img/main-slider.png') no-repeat;
-	}
-
-	.im-new__slider__content {
-		margin: 0 auto;
-		width: 713px;
-		height: 418px;
+    overflow: hidden;
 		background: #f00;
 	}
 
-	.im-new__slider {
+	.main-slider__slider {
 		position: relative;
-		margin: 43px 0;
+		margin: 0;
 		margin-bottom: 90px;
 		height: auto;
-		overflow: hidden;
 		-webkit-padding-start: 0px !important;
 
 		li {
-			list-style: none;
-
+      float: left !important;
+			list-style: none !important;
+      -webkit-padding-start: 0px !important;
 		}
 
 	}
 
-  .im-new__conteiner {
+  .main-slider__conteiner {
     height: 258px;
 
     li {
       float: left !important;
-      width: 100% !important;
       height: 258px !important;
       margin: 0 !important;
       border: 0 !important;
@@ -81,7 +62,7 @@
 
   }
 
-    .im-new_tabs {
+    .main-slider_tabs {
       margin-top: 60px !important;
       position: absolute !important;
       bottom: 24px;
@@ -130,7 +111,7 @@
       left: -66px;
       margin-right: -2%;
       position: absolute;
-      display: block;
+      display: none !important;
       width: 27px !important;
       height: 43px !important;
       overflow: hidden;
@@ -150,7 +131,7 @@
       right: -66px;
       margin-left: -2%;
       position: absolute;
-      display: block;
+      display: none !important;
       width: 27px !important;
       height: 43px !important;
       overflow: hidden;

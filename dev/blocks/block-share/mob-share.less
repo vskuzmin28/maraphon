@@ -1,0 +1,203 @@
+@media only screen and (min-width : @mobile) and  (max-width : @desktop) {
+	// share
+
+	.share {
+		padding: 76px 0 122px 0;
+		position: relative;
+		height: auto;
+		background: @pink;
+	}
+
+	.share__title {
+
+		h3 {
+			font: 72px 'CANDARA';
+			font-weight: bold;
+			text-align: center;
+			color: @white;
+		}
+
+	}
+
+	.share__title__hr {
+		margin: 0 auto;
+		background: @white;
+		width: 38px;
+		height: 4px;
+	}
+
+	.share__item {
+		margin: 0 auto;
+		margin-top: 44px;
+		width: 340px;
+		height: 650px;
+
+		.btn-buy {
+			margin: 0 auto;
+		}
+
+		.btn-yellow {
+			margin: 0 auto;
+
+			&:hover {
+				background: @blue;
+				border-radius: 6px;
+				text-decoration: none;
+				color: #1a1a1a;
+			}
+
+		}
+
+	}
+
+	.share__item__mask {
+		width: 340px;
+		height: 360px;
+		overflow: hidden;
+		background: url('../img/share-item.png') no-repeat;
+
+		p {
+			margin-top: 80px !important;
+			font: 48px 'CANDARA' !important;
+			text-align: center !important;
+			font-weight: bold !important;
+			font-style: italic !important;
+			color: @white !important;
+
+			span {
+				font-size: 72px !important;
+				display: block !important;
+			}
+
+		}
+
+	}
+
+	.share__item__content {
+		height: 258px;
+
+		p {
+			margin-top: -30px !important;
+			text-align: center !important;
+			font: 24px 'CANDARA' !important;
+			font-style: italic !important;
+			color: @white !important;
+		}
+
+		form {
+			margin: 30px 0;
+			height: auto;
+		}
+
+		input[type="text"] {
+			width: 99%;
+			height: 43px;
+			border: 1px solid #a40000;
+			background: @pink;
+			color: @white !important;
+			font: 28px 'CANDARA';
+			font-style: italic;
+			text-align: center;
+			margin-bottom: 8px;
+
+			&:hover, &:focus {
+				border-color: @white;
+			}
+
+		}
+
+		input[type="submit"] {
+			margin: 44px 0 0 9%;
+			border: 0;
+			outline: 0;
+		}
+
+  	input::-webkit-input-placeholder {
+    	opacity: 1;
+    	color: @white;
+    	transition: opacity 0.3s ease;
+  	}
+  	input::-moz-placeholder {
+    	opacity: 1;
+    	transition: opacity 0.3s ease;
+  	}
+  	input:-moz-placeholder {
+    	opacity: 1;
+    	transition: opacity 0.3s ease;
+  	}
+  	input:-ms-input-placeholder {
+    	opacity: 1;
+    	transition: opacity 0.3s ease;
+  	}
+  	input:focus::-webkit-input-placeholder {
+    	opacity: 0;
+    	transition: opacity 0.3s ease;
+  	}
+  	input:focus::-moz-placeholder {
+    	opacity: 0;
+    	transition: opacity 0.3s ease;
+  	}
+  	input:focus:-moz-placeholder {
+    	opacity: 0;
+    	transition: opacity 0.3s ease;
+  	}
+  	input:focus:-ms-input-placeholder {
+    	opacity: 0;
+    	transition: opacity 0.3s ease;
+  	}
+
+		}
+
+	.share__item__content__price {
+		margin-top: -10px;
+		margin-bottom: 30px;
+		font: 97px 'CANDARA';
+		font-weight: bold;
+		text-align: center;
+		color: @white;
+	}
+
+	.share__item__content__date-day {
+		font: 97px 'CANDARA';
+		font-weight: bold;
+		text-align: center;
+		color: @white;
+	}
+
+	.share__item__content__date-mounth {
+		font: 30px 'CANDARA';
+		font-weight: bold;
+		font-style: italic;
+		text-align: center;
+		color: @white;
+		text-transform: uppercase;
+	}
+
+	.btn-yellow {
+		display: block;
+		width: 276px;
+		height: 76px;
+		background: url('../img/btn-yellow.png') no-repeat;
+		font: 37px 'CANDARA';
+		color: #1a1a1a;
+		text-align: center;
+		line-height: 76px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	.btn-buy {
+		display: block;
+		width: 276px;
+		height: 76px;
+		background: url('../img/btn-buy.png') no-repeat;
+		font: 37px 'CANDARA';
+		color: #1a1a1a;
+		text-align: center;
+		line-height: 76px;
+		text-decoration: none;
+		text-transform: uppercase;
+		border-radius: 6px;
+	}
+
+}

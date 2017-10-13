@@ -1,4 +1,4 @@
-@media only screen and (min-width : @desktop) {
+@media only screen and (min-width : @mobile) and  (max-width : @desktop) {
 
 	.im-new {
 		height: auto;
@@ -28,14 +28,11 @@
 
 	.im-new__slider {
 		margin: 0 auto;
-		width: 1065px;
 		height: 418px;
-		background: url('../img/main-slider.png') no-repeat;
 	}
 
 	.im-new__slider__content {
 		margin: 0 auto;
-		width: 713px;
 		height: 418px;
 		background: #f00;
 	}
@@ -130,7 +127,7 @@
       left: -66px;
       margin-right: -2%;
       position: absolute;
-      display: block;
+      display: none;
       width: 27px !important;
       height: 43px !important;
       overflow: hidden;
@@ -150,7 +147,7 @@
       right: -66px;
       margin-left: -2%;
       position: absolute;
-      display: block;
+      display: none;
       width: 27px !important;
       height: 43px !important;
       overflow: hidden;
